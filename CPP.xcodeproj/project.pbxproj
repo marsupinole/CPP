@@ -16,6 +16,7 @@
 		2529C033170805100077CC90 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2529C032170805100077CC90 /* Default.png */; };
 		2529C035170805100077CC90 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2529C034170805100077CC90 /* Default@2x.png */; };
 		2529C037170805100077CC90 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2529C036170805100077CC90 /* Default-568h@2x.png */; };
+		2529C03F170805340077CC90 /* chapter0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2529C03D170805340077CC90 /* chapter0.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		2529C032170805100077CC90 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2529C034170805100077CC90 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2529C036170805100077CC90 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2529C03D170805340077CC90 /* chapter0.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chapter0.cpp; sourceTree = "<group>"; };
+		2529C03E170805340077CC90 /* chapter0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chapter0.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 			children = (
 				2529C02F170805100077CC90 /* CPPAppDelegate.h */,
 				2529C030170805100077CC90 /* CPPAppDelegate.m */,
+				2529C03D170805340077CC90 /* chapter0.cpp */,
+				2529C03E170805340077CC90 /* chapter0.h */,
 				2529C027170805100077CC90 /* Supporting Files */,
 			);
 			path = CPP;
@@ -167,6 +172,7 @@
 			files = (
 				2529C02D170805100077CC90 /* main.m in Sources */,
 				2529C031170805100077CC90 /* CPPAppDelegate.m in Sources */,
+				2529C03F170805340077CC90 /* chapter0.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,9 +251,16 @@
 		2529C03B170805100077CC90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_CXX0X_EXTENSIONS = YES;
+				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CPP/CPP-Prefix.pch";
+				GCC_VERSION = "";
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
 				INFOPLIST_FILE = "CPP/CPP-Info.plist";
+				LINKER_DISPLAYS_MANGLED_NAMES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -256,9 +269,16 @@
 		2529C03C170805100077CC90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_CXX0X_EXTENSIONS = YES;
+				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CPP/CPP-Prefix.pch";
+				GCC_VERSION = "";
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
 				INFOPLIST_FILE = "CPP/CPP-Info.plist";
+				LINKER_DISPLAYS_MANGLED_NAMES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
