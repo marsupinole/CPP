@@ -1,15 +1,16 @@
 //
-//  chapter0.h
+//  main.m
 //  CPP
 //
 //  Created by Azam Malik on 3/31/13.
 //  Copyright (c) 2013 acceleratedCplusplus. All rights reserved.
 //
 
-#ifndef __CPP__chapter0__
-#define __CPP__chapter0__
 
 #include <iostream>
-void chapter0();
 
-#endif /* defined(__CPP__chapter0__) */
+int main(int argc, char *argv[])
+{
+    std::cout << "Hello, world!" << std::endl;
+    return 0;
+}

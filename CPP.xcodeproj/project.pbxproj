@@ -11,7 +11,7 @@
 		2529C023170805100077CC90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2529C022170805100077CC90 /* Foundation.framework */; };
 		2529C025170805100077CC90 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2529C024170805100077CC90 /* CoreGraphics.framework */; };
 		2529C02B170805100077CC90 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2529C029170805100077CC90 /* InfoPlist.strings */; };
-		2529C02D170805100077CC90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529C02C170805100077CC90 /* main.m */; };
+		2529C02D170805100077CC90 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2529C02C170805100077CC90 /* main.cpp */; };
 		2529C031170805100077CC90 /* CPPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529C030170805100077CC90 /* CPPAppDelegate.m */; };
 		2529C033170805100077CC90 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2529C032170805100077CC90 /* Default.png */; };
 		2529C035170805100077CC90 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2529C034170805100077CC90 /* Default@2x.png */; };
@@ -26,7 +26,7 @@
 		2529C024170805100077CC90 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2529C028170805100077CC90 /* CPP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CPP-Info.plist"; sourceTree = "<group>"; };
 		2529C02A170805100077CC90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2529C02C170805100077CC90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2529C02C170805100077CC90 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2529C02E170805100077CC90 /* CPP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CPP-Prefix.pch"; sourceTree = "<group>"; };
 		2529C02F170805100077CC90 /* CPPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPPAppDelegate.h; sourceTree = "<group>"; };
 		2529C030170805100077CC90 /* CPPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPPAppDelegate.m; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 			children = (
 				2529C02F170805100077CC90 /* CPPAppDelegate.h */,
 				2529C030170805100077CC90 /* CPPAppDelegate.m */,
-				2529C03D170805340077CC90 /* chapter0.cpp */,
 				2529C03E170805340077CC90 /* chapter0.h */,
+				2529C03D170805340077CC90 /* chapter0.cpp */,
 				2529C027170805100077CC90 /* Supporting Files */,
 			);
 			path = CPP;
@@ -95,7 +95,7 @@
 			children = (
 				2529C028170805100077CC90 /* CPP-Info.plist */,
 				2529C029170805100077CC90 /* InfoPlist.strings */,
-				2529C02C170805100077CC90 /* main.m */,
+				2529C02C170805100077CC90 /* main.cpp */,
 				2529C02E170805100077CC90 /* CPP-Prefix.pch */,
 				2529C032170805100077CC90 /* Default.png */,
 				2529C034170805100077CC90 /* Default@2x.png */,
@@ -170,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2529C02D170805100077CC90 /* main.m in Sources */,
+				2529C02D170805100077CC90 /* main.cpp in Sources */,
 				2529C031170805100077CC90 /* CPPAppDelegate.m in Sources */,
 				2529C03F170805340077CC90 /* chapter0.cpp in Sources */,
 			);
@@ -258,7 +258,7 @@
 				GCC_VERSION = "";
 				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
-				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_PEDANTIC = NO;
 				INFOPLIST_FILE = "CPP/CPP-Info.plist";
 				LINKER_DISPLAYS_MANGLED_NAMES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,7 +276,7 @@
 				GCC_VERSION = "";
 				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
-				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_PEDANTIC = NO;
 				INFOPLIST_FILE = "CPP/CPP-Info.plist";
 				LINKER_DISPLAYS_MANGLED_NAMES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";

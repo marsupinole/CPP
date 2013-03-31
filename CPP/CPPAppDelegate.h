@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "chapter0.h"
 
 @interface CPPAppDelegate : UIResponder <UIApplicationDelegate>
+{
+    //chapter0
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

@@ -7,3 +7,14 @@
 //
 
 #include "chapter0.h"
+#include <iostream>
+//int main()
+//{
+//    std::cout << "Hello, world!" << std::endl;
+//    return 0;
+//}
+
+void chapter0()
+{
+    std::cout << "Hello, world!" << std::endl;
+}
