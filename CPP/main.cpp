@@ -1,16 +1,27 @@
-//
-//  main.m
-//  CPP
-//
-//  Created by Azam Malik on 3/31/13.
-//  Copyright (c) 2013 acceleratedCplusplus. All rights reserved.
-//
-
-
 #include <iostream>
+#include <string>
 
-int main(int argc, char *argv[])
+int main()
 {
-    std::cout << "Hello, world!" << std::endl;
+//    std::cout << "Hello, world!" << std::endl;
+//    return 0;
+    
+    std::cout << "Please enter your first name: ";
+    std::string name;
+    std::cin >> name;
+    
+    const std::string greeting = "HELLO, " + name + "!";
+    const std::string spaces(greeting.size(), ' ');
+    const std::string second = "* " + spaces + " *";
+    
+    const std::string first(second.size(), '*');
+    std::cout << std::endl;
+    std::cout << first << std::endl;
+    std::cout << second << std::endl;
+    std::cout << "* " << greeting << " *" << std::endl;
+    std::cout << second << std::endl;
+    std::cout << first << std::endl;
+    
     return 0;
+    
 }
